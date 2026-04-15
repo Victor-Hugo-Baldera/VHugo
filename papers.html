@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Papers | Victor Hugo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Victor Hugo Home">
+        <img src="pages/vh.png" alt="Victor Hugo Logo" />
+      </a>
+
+      <nav class="nav-menu">
+        <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
+        <a href="papers.html" class="active" data-en="Papers" data-es="Publicaciones">Papers</a>
+        <a href="projects.html" data-en="Projects" data-es="Proyectos">Projects</a>
+        <a href="experience.html" data-en="Experience" data-es="Experiencia">Experience</a>
+        <a href="blog.html" data-en="Blog" data-es="Blog">Blog</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="social-icons">
+          <a href="https://github.com/Victor-Hugo-Baldera" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 .5C5.65.5.5 5.65.5 12A11.5 11.5 0 0 0 8.36 22.9c.58.11.79-.25.79-.56v-2.02c-3.18.69-3.85-1.35-3.85-1.35-.52-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.73 1.16 1.73 1.16 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.72-1.52-2.54-.29-5.22-1.27-5.22-5.66 0-1.25.45-2.27 1.16-3.07-.12-.29-.5-1.46.11-3.04 0 0 .95-.3 3.12 1.17a10.8 10.8 0 0 1 5.68 0c2.17-1.47 3.12-1.17 3.12-1.17.61 1.58.23 2.75.11 3.04.72.8 1.16 1.82 1.16 3.07 0 4.4-2.69 5.36-5.24 5.65.41.35.77 1.05.77 2.12v3.14c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+            </svg>
+          </a>
+
+          <a href="https://www.linkedin.com/in/victor-hugo-baldera-chapo%C3%B1an-35a350390/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4.98 3.5A2.48 2.48 0 1 0 5 8.46 2.48 2.48 0 0 0 4.98 3.5ZM3 9h4v12H3V9Zm7 0h3.83v1.64h.05c.53-1.01 1.84-2.07 3.79-2.07 4.05 0 4.8 2.67 4.8 6.13V21h-4v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94V21h-4V9Z"/>
+            </svg>
+          </a>
+
+          <a href="https://scholar.google.com/citations?user=IOjB55EAAAAJ&hl=es&oi=ao" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm0 14L5 13.18V17c0 2.76 3.13 5 7 5s7-2.24 7-5v-3.82L12 17Z"/>
+            </svg>
+          </a>
+        </div>
+
+        <button class="lang-btn" id="langToggle" type="button" aria-label="Change language">
+          <span class="lang-icon">🌐</span>
+          <span class="lang-label">EN</span>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" data-en="Home" data-es="Inicio">Home</a>
+      <a href="papers.html" class="active" data-en="Papers" data-es="Publicaciones">Papers</a>
+      <a href="projects.html" data-en="Projects" data-es="Proyectos">Projects</a>
+      <a href="experience.html" data-en="Experience" data-es="Experiencia">Experience</a>
+      <a href="blog.html" data-en="Blog" data-es="Blog">Blog</a>
+    </div>
+  </header>
+
+  <!-- ================= PAPERS HERO ================= -->
+  <section class="papers-hero">
+    <div class="container">
+      <span class="papers-tag" data-en="Scientific Production" data-es="Producción Científica">
+        Scientific Production
+      </span>
+
+      <h1 data-en="Papers & Publications" data-es="Papers y Publicaciones">
+        Papers & Publications
+      </h1>
+
+      <p
+        data-en="This section is connected to my Google Sheet and updates automatically when I add new publications."
+        data-es="Esta sección está conectada a mi hoja de Google y se actualiza automáticamente cuando agrego nuevas publicaciones.">
+        This section is connected to my Google Sheet and updates automatically when I add new publications.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= PAPERS LIST ================= -->
+  <section class="papers-section">
+    <div class="container">
+      <div class="papers-section-header">
+      </div>
+
+      <div id="papersGrid" class="papers-grid">
+        <div class="paper-loading" data-en="Loading publications..." data-es="Cargando publicaciones...">
+          Loading publications...
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <img src="pages/vh.png" alt="Victor Hugo Logo" />
+        </div>
+
+        <p>
+          Integrando tecnología y agronomía para transformar el futuro de la agricultura
+          a través de datos, ciencia y desarrollo de software.
+        </p>
+
+        <div class="footer-social">
+          <a
+            href="https://github.com/Victor-Hugo-Baldera"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 .5C5.65.5.5 5.65.5 12A11.5 11.5 0 0 0 8.36 22.9c.58.11.79-.25.79-.56v-2.02c-3.18.69-3.85-1.35-3.85-1.35-.52-1.31-1.26-1.66-1.26-1.66-1.03-.7.08-.69.08-.69 1.14.08 1.73 1.16 1.73 1.16 1.01 1.73 2.65 1.23 3.3.94.1-.73.4-1.23.72-1.52-2.54-.29-5.22-1.27-5.22-5.66 0-1.25.45-2.27 1.16-3.07-.12-.29-.5-1.46.11-3.04 0 0 .95-.3 3.12 1.17a10.8 10.8 0 0 1 5.68 0c2.17-1.47 3.12-1.17 3.12-1.17.61 1.58.23 2.75.11 3.04.72.8 1.16 1.82 1.16 3.07 0 4.4-2.69 5.36-5.24 5.65.41.35.77 1.05.77 2.12v3.14c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/>
+            </svg>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/victor-hugo-baldera-chapo%C3%B1an-35a350390/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            title="LinkedIn"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4.98 3.5A2.48 2.48 0 1 0 5 8.46 2.48 2.48 0 0 0 4.98 3.5ZM3 9h4v12H3V9Zm7 0h3.83v1.64h.05c.53-1.01 1.84-2.07 3.79-2.07 4.05 0 4.8 2.67 4.8 6.13V21h-4v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94V21h-4V9Z"/>
+            </svg>
+          </a>
+
+          <a
+            href="https://scholar.google.com/citations?user=IOjB55EAAAAJ&hl=es&oi=ao"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Google Scholar"
+            title="Google Scholar"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3 1 9l11 6 9-4.91V17h2V9L12 3Zm0 14L5 13.18V17c0 2.76 3.13 5 7 5s7-2.24 7-5v-3.82L12 17Z"/>
+            </svg>
+          </a>
+
+          <a
+            href="mailto:victorhugobalderachaponan@gmail.com"
+            aria-label="Correo"
+            title="Correo"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M2 4h20v16H2V4Zm10 7 10-7H2l10 7Zm0 2L2 6v12h20V6l-10 7Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h3>Navegación</h3>
+        <a href="index.html">Inicio</a>
+        <a href="papers.html">Papers</a>
+        <a href="projects.html">Proyectos</a>
+        <a href="experience.html">Experiencia</a>
+      </div>
+
+      <div class="footer-links">
+        <h3>Recursos</h3>
+        <a href="blog.html">Blog</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Victor Hugo. Hecho con ❤️ para la agricultura</p>
+      <div>
+        <a href="#">Privacidad</a>
+        <a href="#">Términos</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const SHEET_CSV_URL =
+        "https://docs.google.com/spreadsheets/d/1RLeUGv4fmsbsDph4AT_ZT7PeZq64tNWkwkwK5Rle9lA/gviz/tq?tqx=out:csv&sheet=Papers";
+
+      const papersGrid = document.getElementById("papersGrid");
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const langToggle = document.getElementById("langToggle");
+      const langLabel = document.querySelector(".lang-label");
+
+      let currentLang = "en";
+
+      function parseCSV(text) {
+        const rows = [];
+        let row = [];
+        let value = "";
+        let inQuotes = false;
+
+        for (let i = 0; i < text.length; i++) {
+          const char = text[i];
+          const next = text[i + 1];
+
+          if (char === '"') {
+            if (inQuotes && next === '"') {
+              value += '"';
+              i++;
+            } else {
+              inQuotes = !inQuotes;
+            }
+          } else if (char === "," && !inQuotes) {
+            row.push(value.trim());
+            value = "";
+          } else if ((char === "\n" || char === "\r") && !inQuotes) {
+            if (char === "\r" && next === "\n") i++;
+            row.push(value.trim());
+            if (row.some(cell => cell !== "")) rows.push(row);
+            row = [];
+            value = "";
+          } else {
+            value += char;
+          }
+        }
+
+        if (value.length > 0 || row.length > 0) {
+          row.push(value.trim());
+          if (row.some(cell => cell !== "")) rows.push(row);
+        }
+
+        return rows;
+      }
+
+      function normalizeHeader(header) {
+        return header.trim().toLowerCase();
+      }
+
+      function parsePublicationDate(raw) {
+        if (!raw) return new Date(0);
+
+        const value = raw.trim().toLowerCase();
+        const monthMap = {
+          ene: 0, enero: 0, jan: 0, january: 0,
+          feb: 1, febrero: 1, february: 1,
+          mar: 2, marzo: 2, march: 2,
+          abr: 3, abril: 3, apr: 3, april: 3,
+          may: 4, mayo: 4,
+          jun: 5, junio: 5, june: 5,
+          jul: 6, julio: 6, july: 6,
+          ago: 7, agosto: 7, aug: 7, august: 7,
+          sep: 8, sept: 8, septiembre: 8, september: 8,
+          oct: 9, octubre: 9, october: 9,
+          nov: 10, noviembre: 10, november: 10,
+          dic: 11, diciembre: 11, dec: 11, december: 11
+        };
+
+        if (/^\d{4}-\d{2}-\d{2}$/.test(value)) {
+          return new Date(value + "T00:00:00");
+        }
+
+        if (/^\d{1,2}\/\d{1,2}\/\d{4}$/.test(value)) {
+          const [d, m, y] = value.split("/").map(Number);
+          return new Date(y, m - 1, d);
+        }
+
+        const parts = value.split(/[-\s]/).filter(Boolean);
+        if (parts.length === 3) {
+          if (monthMap[parts[0]] !== undefined) {
+            return new Date(Number(parts[2]), monthMap[parts[0]], Number(parts[1]));
+          }
+          if (monthMap[parts[1]] !== undefined) {
+            return new Date(Number(parts[2]), monthMap[parts[1]], Number(parts[0]));
+          }
+        }
+
+        const fallback = new Date(raw);
+        return isNaN(fallback) ? new Date(0) : fallback;
+      }
+
+      function createPaperCard(paper) {
+        const article = document.createElement("article");
+        article.className = "paper-card";
+
+        const imageHTML = paper.image
+          ? `<div class="paper-image"><img src="${paper.image}" alt="${paper.short_title || paper.journal || "Paper image"}"></div>`
+          : "";
+
+        const doiHTML = paper.doi
+          ? `<a href="${paper.doi}" target="_blank" rel="noopener noreferrer">${currentLang === "es" ? "Ver DOI" : "View DOI"}</a>`
+          : "";
+
+        article.innerHTML = `
+          ${imageHTML}
+          <div class="paper-card-content">
+            <span class="paper-journal">${paper.journal || ""}</span>
+            <h3>${paper.short_title || currentLang === "es" ? (paper.short_title || "Publicación") : (paper.short_title || "Publication")}</h3>
+            <p class="paper-date">${paper.publication || ""}</p>
+            <div class="paper-actions">
+              ${doiHTML}
+            </div>
+          </div>
+        `;
+
+        return article;
+      }
+
+      async function loadPapers() {
+        try {
+          const response = await fetch(SHEET_CSV_URL);
+          if (!response.ok) throw new Error("Could not fetch sheet");
+
+          const csvText = await response.text();
+          const rows = parseCSV(csvText);
+
+          if (!rows.length) {
+            papersGrid.innerHTML = `<div class="paper-empty">${currentLang === "es" ? "No hay publicaciones disponibles." : "No publications available."}</div>`;
+            return;
+          }
+
+          const headers = rows[0].map(normalizeHeader);
+          const dataRows = rows.slice(1);
+
+          const getIndex = (name) => headers.indexOf(name.toLowerCase());
+
+          const journalIndex = getIndex("journal");
+          const publicationIndex = getIndex("publication");
+          const shortTitleIndex = getIndex("short_title");
+          const doiIndex = getIndex("doi");
+          const imageIndex = getIndex("image");
+
+          const papers = dataRows
+            .filter(row => row.some(cell => cell && cell.trim() !== ""))
+            .map(row => ({
+              journal: row[journalIndex] || "",
+              publication: row[publicationIndex] || "",
+              short_title: row[shortTitleIndex] || "",
+              doi: row[doiIndex] || "",
+              image: row[imageIndex] || ""
+            }))
+            .sort((a, b) => parsePublicationDate(b.publication) - parsePublicationDate(a.publication));
+
+          papersGrid.innerHTML = "";
+          papers.forEach(paper => papersGrid.appendChild(createPaperCard(paper)));
+        } catch (error) {
+          papersGrid.innerHTML = `<div class="paper-empty">${currentLang === "es" ? "No se pudieron cargar las publicaciones." : "Could not load publications."}</div>`;
+          console.error(error);
+        }
+      }
+
+      function updateLanguage() {
+        document.querySelectorAll("[data-en][data-es]").forEach(element => {
+          element.innerHTML = element.getAttribute(`data-${currentLang}`);
+        });
+
+        if (langLabel) {
+          langLabel.textContent = currentLang.toUpperCase();
+        }
+
+        document.documentElement.lang = currentLang;
+        loadPapers();
+      }
+
+      if (langToggle) {
+        langToggle.addEventListener("click", () => {
+          currentLang = currentLang === "en" ? "es" : "en";
+          updateLanguage();
+        });
+      }
+
+      if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener("click", () => {
+          mobileMenu.classList.toggle("show");
+          menuToggle.classList.toggle("active");
+          menuToggle.setAttribute(
+            "aria-expanded",
+            mobileMenu.classList.contains("show") ? "true" : "false"
+          );
+        });
+      }
+
+      updateLanguage();
+    });
+  </script>
+</body>
+</html>
